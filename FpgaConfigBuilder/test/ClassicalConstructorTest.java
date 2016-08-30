@@ -21,8 +21,10 @@ public class ClassicalConstructorTest {
 		FpgaConfig fpgaDestinationConfig = classicalConstructor.create(DEMOD_ID, HOST, MAC);
 				
 		InetAddress ipAddress = (InetAddress) fpgaDestinationConfig.getParam(IpAddress.class.getName()).getValue();
-		assertEquals(HOST, ipAddress.getHostAddress());
+		String ipAddressValue = ipAddress.getHostAddress(); //Nice!
+		assertEquals(HOST, ipAddressValue);
 		
-		assertArrayEquals(MAC, (byte []) fpgaDestinationConfig.getParam(MacAddress.class.getName()).getValue());
+		//What to do with arrays?
+		assertArrayEquals(MAC, (byte []) fpgaDestinationConfig.getParam(MacAddress.class.getName()).getValue()); //@TODO: think about representation
 	}
 }
