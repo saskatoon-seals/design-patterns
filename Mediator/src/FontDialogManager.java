@@ -1,10 +1,16 @@
+import java.util.AbstractMap;
+import java.util.HashMap;
 
 public class FontDialogManager extends DialogManager {
 
 	Widget listBox, entryField, button;
 	
+	AbstractMap<Widget, Command> processors = new HashMap<>();
+	
 	public FontDialogManager() {
 		createWidgets();
+		processors.put(button, new ButtonCommand());
+		processors.put(entryField, new EntryFieldCommand());
 	}
 	
 	@Override
@@ -15,14 +21,7 @@ public class FontDialogManager extends DialogManager {
 	//@TODO: Solve the problem without violating OCP and keep the mediator philosophy! 
 	@Override
 	public void widgetChanged(Widget widget) {
-		// Violation of OCP!
-		if (widget == listBox) {
-			
-		} else if (widget == entryField) {
-			
-		} else if (widget == button) {
-			
-		}
+		processors.get(widget).execute();
 	}
 
 	@Override
