@@ -1,6 +1,6 @@
 # Object Orientented Design Patterns
 
-Implementations of different design patterns from the "Gang of Four Design Patterns" book.
+Example implementations of different design patterns with object oriented paradigm.
 
 NOTE: All of the folders are Eclipse Java projects. If you have Eclipse, just clone the repository and set the 
 Eclipse workspace to point to the cloned repository. 
@@ -25,3 +25,5 @@ Behavioral:
 - Memento
 - State
 - Visitor
+
+Reference: Gang of Four: "Design Patterns: Elements of Reusable Object-Oriented Software", 1994.
