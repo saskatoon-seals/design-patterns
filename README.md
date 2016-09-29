@@ -1,5 +1,20 @@
-# design-patterns
+# Object Orientented Design Patterns
 
-Implementation of design patterns from the book of the Gang of Four.
+Implementations of different design patterns, theory from the GoF book, examples mainly mine.
 
-Some of the examples are exactly from the book and some examples I made up.
+Creational:
+-Abstract Factory
+-Builder
+-Factory
+
+Structural:
+-Adapter
+-Composite (combined with Visitor pattern)
+-Singleton
+
+Behavioral:
+-Chain of Responsibility
+-Mediator
+-Memento
+-State
+-Visitor
