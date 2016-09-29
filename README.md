@@ -1,6 +1,6 @@
 # Object Orientented Design Patterns
 
-Implementations of different design patterns, theory from the GoF book, examples mainly mine.
+Implementations of different design patterns from the Gang of Four "Design Patterns" book.
 
 Creational:
 
